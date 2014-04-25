@@ -19,6 +19,9 @@
     <hr style="margin-top: 50px">
 
     <div class="col-lg-4 col-md-4 list-group" data-ng-repeat="rank in ranks" style="margin-bottom:50px;">
+        <img src="/modules/ranks/img/gold.png" width="50" height="50" ng-show=($index==0)>
+        <img src="/modules/ranks/img/silver.png" width="50" height="50" ng-show=($index==1)>
+        <img src="/modules/ranks/img/bronze.png" width="50" height="50" ng-show=($index==2)>
         <a data-ng-href="#!/ranks/{{rank._id}}" class="list-group-item rank-{{$index}}">
             <p style="margin-bottom:10px" class="list-group-item-text-content"><strong>{{$index+1}}위 {{rank.name}}</strong></p>
             <img src="{{rank.photo}}" width="100%" height="300">
