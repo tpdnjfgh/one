@@ -20,7 +20,7 @@
 
     <div class="col-lg-4 col-md-4 list-group" data-ng-repeat="rank in ranks" style="margin-bottom:50px;">
         <a data-ng-href="#!/ranks/{{rank._id}}" class="list-group-item rank-{{$index}}">
-            <p class="list-group-item-text-content">{{$index+1}}위 {{rank.name}}</p>
+            <p style="margin-bottom:10px" class="list-group-item-text-content"><strong>{{$index+1}}위 {{rank.name}}</strong></p>
             <img src="{{rank.photo}}" width="100%" height="300">
         </a>
         
